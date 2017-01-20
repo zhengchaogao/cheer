@@ -57,17 +57,31 @@
       margin: 0 auto;
       padding: 0;
       width: 770px;
+      height: 27px;
       list-style-type: none;
       overflow: hidden;
       li {
         float: left;
+        position: relative;
         margin-right: 75px;
         font-size: 14px;
         line-height: 24px;
         color: rgb(254, 254, 254);
         cursor: pointer;
-        &.active {
-          border-bottom: 3px solid rgb(207, 169, 114);
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -3px;
+          width: 100%;
+          height: 3px;
+          background-color: rgb(207, 169, 114);
+          transform: scale3d(0, 1, 1);
+          transition: transform .1s;
+        }
+        &.active:before {
+          /*border-bottom: 3px solid rgb(207, 169, 114);*/
+          transform: scale3d(1, 1, 1);
         }
         &:last-of-type {
           margin-right: 0;
