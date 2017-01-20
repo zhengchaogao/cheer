@@ -1,0 +1,25 @@
+{
+  "globals": {
+    "Vue": true,
+    "wow": true,
+    "lib": true,
+    "chrome": true
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": [
+    "vue",
+    "html"
+  ],
+  "extends": [
+    "airbnb"
+    //"airbnb-base/legacy"
+  ],
+  "rules": {
+    "comma-dangle": [2, "never"],
+    "linebreak-style": ["off", "windows"],
+    "no-new": ["off"]
+  }
+}
