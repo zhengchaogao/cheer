@@ -37,7 +37,8 @@
   @import './css/normalize.less';
   .app {
     position: relative;
-    /*width: 1920px;*/
+    min-width: 100px;
+    overflow: hidden;
   }
   .fade-enter-active, .fade-leave-active {
     transition: opacity .5s
